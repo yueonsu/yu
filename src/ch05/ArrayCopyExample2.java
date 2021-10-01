@@ -8,7 +8,7 @@ public class ArrayCopyExample2 {
         int[] arr2 = new int[arr1.length];
         System.out.println(arr2.hashCode());
 
-        // 깊은 복사 (deep copy) (heap 복사)
+        // 깊은 복사 (deep copy) (heap 메모리 복사)
         // arr2 = arr1; // 이것은 얕은복사
         System.out.println(arr1 == arr2);
 
