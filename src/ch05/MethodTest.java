@@ -27,7 +27,7 @@ public class MethodTest {
         }
         else
         {
-            System.out.println("알 수 없음");
+            System.out.println("알 수 없음"); // 예외처리
         }
     }
 
