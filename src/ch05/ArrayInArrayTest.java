@@ -21,11 +21,11 @@ public class ArrayInArrayTest {
 
         String[] names = {"김영희", "김철수", "홍길동"};
         int[] nameint = new int[names.length];
-        String[] object = {"수학", "영어", "국어"};
-        int[] objectInt = new int[object.length];
+        String[] subject = {"수학", "영어", "국어"};
+        int[] subjectInt = new int[subject.length];
         for(int i=0; i<nameint.length; i++)
         {
-            for(int z=0; z<objectInt.length; z++)
+            for(int z=0; z<subjectInt.length; z++)
             {
                 sum+=scores[z][i];
             }
@@ -33,13 +33,13 @@ public class ArrayInArrayTest {
             sum = 0;
         }
 
-        for(int i=0; i<objectInt.length; i++)
+        for(int i=0; i<subjectInt.length; i++)
         {
             for(int z=0; z<scores[i].length; z++)
             {
                 sum += scores[i][z];
             }
-            System.out.printf("%s 총점: %d\t평균: %.1f\n", object[i], sum, (double) sum / scores[i].length);
+            System.out.printf("%s 총점: %d\t평균: %.1f\n", subject[i], sum, (double) sum / scores[i].length);
 
             sum = 0;
         }
