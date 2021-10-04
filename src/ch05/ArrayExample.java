@@ -10,8 +10,8 @@ public class ArrayExample {
          */
 
         int[] scores = { 83, 90, 87, 100, 50 }; // int형 배열( 레퍼런스타입 ( 주소값이 저장 ) , 원시타입 아님 )
-//      scores[0] = 11;
-//      System.out.println(scores[0]);
+//        scores[0] = 11;
+//        System.out.println(scores[0]);
         System.out.println(scores.length);
 
       for(int i=0; i<scores.length; i++)

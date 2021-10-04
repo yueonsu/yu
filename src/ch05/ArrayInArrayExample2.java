@@ -12,7 +12,7 @@ public class ArrayInArrayExample2 {
         System.out.println(arr.length); //층 수
         System.out.println(arr[0].length); // 칸 수
         System.out.println(arr[1].length); // 칸 수
-        System.out.println(arr[2].length); // 칸 수;
+        System.out.println(arr[2].length); // 칸 수
 //                        2
         for(int i=0; i<arr.length; i++)
         { //                     3
