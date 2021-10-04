@@ -9,7 +9,7 @@ public class ArrayCopyExample {
         System.out.println("arr2[0] : " + arr2[0]);
 
 //        arr1[0] = 5;
-        arr2[0] = 5;
+        arr2[0] = 5; // arr1 값도 바뀜
 
         System.out.println("arr1[0] : " + arr1[0]);
         System.out.println("arr2[0] : " + arr2[0]);

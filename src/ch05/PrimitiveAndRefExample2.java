@@ -8,7 +8,7 @@ public class PrimitiveAndRefExample2 {
         box.val = 10;
 
         Box box2 = box; //--> 주소값 복사 box, box2는 같은 곳을 가리킨다
-        
+        box2.val = 20;
 
         System.out.println("val : " + val);
         changeVal(val);
