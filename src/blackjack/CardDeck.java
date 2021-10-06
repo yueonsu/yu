@@ -12,7 +12,7 @@ public class CardDeck{
     }
     private void init() {
         String[] patterns = {"스페이드", "하트", "클럽", "다이아몬드"};
-        cards = new ArrayList();
+        cards = new ArrayList(); // 배열씀
         for(int i=0; i<patterns.length; i++) {
             for(int z=1; z<=13; z++) {
                 String denomination = null;
