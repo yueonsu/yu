@@ -8,4 +8,5 @@ public interface RemoteControl {
     public void turnOff();
     abstract void volumeUp();
     void volumeDown();
+//  자동으로 public abstract가 붙는다
 }

@@ -22,6 +22,8 @@ public class ArrayListTest {
             System.out.printf("(%d) - %d\n", i, list.get(i));
         }
         /*
+        3
+
         System.out.println(list);
 
         MyArrayList myList = new MyArrayList();
