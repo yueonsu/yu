@@ -6,6 +6,7 @@ import java.util.List;
 public class CardDeck{
     private List<Card> cards;
 
+
     public CardDeck() { // 클래스명이랑 이름이 같다, 리턴타입이 없다
         init();
 
@@ -35,12 +36,13 @@ public class CardDeck{
         }
     }
     // 항상 랜덤한 카드를 준다
+    // 카드 타입을 참조
     public Card getCard() {
         // if 콜렉션을 배열로 했다면 먼저 섞고, 순차적으로 카드를 줌
         // if 콜렉션을 ArrayList로 했다면 랜덤하게 카드를 줌
         int rIdx = (int)(Math.random() * cards.size());
 //        return cards.remove((int)(Math.random() * cards.size()));
-        return cards.remove(rIdx);
+        return cards.remove(rIdx); // Card 타입을 리턴
     }
 
     public void showAllCards() {
@@ -50,7 +52,7 @@ public class CardDeck{
 //        }
 
         //ForEach
-        //            배열    (collection : 순차적인 것 들만 가능)
+        //            배열    (collection : 순차적인 것들만 가능)
         for(Card c : cards) {
             System.out.println(c);
         }

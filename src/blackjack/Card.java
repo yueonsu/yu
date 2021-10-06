@@ -18,6 +18,7 @@ public class Card {
     }
 
     public int getPoint() {
+
         switch(denomination) {
             case "A" :
                 return 1;
@@ -25,6 +26,7 @@ public class Card {
                 return 10;
             default :
                 return Integer.parseInt(denomination);
+
         }
     }
     @Override
