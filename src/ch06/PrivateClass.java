@@ -4,10 +4,9 @@ public class PrivateClass {
     private int val;
     int defaultVal;
 
-    private void print()
-    {
+    public PrivateClass() {}
+
+    private void print() {
         System.out.println("프린트!!!");
     }
-
-
 }

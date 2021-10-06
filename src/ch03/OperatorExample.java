@@ -6,7 +6,6 @@ public class OperatorExample {
         int n2 = 10;
 
         int result = n1 + n2;
-        System.out.println("n1 + n2 = " + result);
         System.out.println(n1 + " + " + n2 + " = " + result);
         System.out.printf("%d + %d = %d\n", n1, n2, result);
 
@@ -22,6 +21,5 @@ public class OperatorExample {
         System.out.println();
         System.out.printf("%d == %d = %b\n", n1, n2, n1 == n2);
         System.out.printf("%d != %d = %b\n", n1, n2, n1 != n2);
-        System.out.println();
     }
 }

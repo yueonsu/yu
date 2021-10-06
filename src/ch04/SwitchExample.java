@@ -1,10 +1,9 @@
 package ch04;
 
 public class SwitchExample {
-    public static void main(String[] args){
-        int num = (int)(Math.random()* 6 ) + 1;
-
-        switch(num){
+    public static void main(String[] args) {
+        int num = 9;
+        switch(num) {
             case 1:
                 System.out.println("1번이 나왔습니다.");
                 break;

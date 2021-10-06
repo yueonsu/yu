@@ -4,7 +4,6 @@ public class Tv {
     private String brand;
     private int inch;
 
-    //getters, setters
     public String getBrand() {
         return brand;
     }
@@ -20,4 +19,6 @@ public class Tv {
     public void setInch(int inch) {
         this.inch = inch;
     }
+
+    //getters, setters
 }

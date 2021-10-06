@@ -3,23 +3,31 @@ package ch05;
 import java.util.Scanner;
 
 public class ArrayTest2 {
+    /*
+        숫자 3개를 입력해 주세요.
+        숫자1 :
+        숫자2 :
+        숫자3 :
+
+        합계 :
+        평균 :
+     */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("몇 개의 숫자를 사용할 것 입니까?");
-        int LEN = sc.nextInt();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("몇 개의 숫자를 사용할 것 입니까? : ");
+        int LEN = scan.nextInt();
+
         int[] numberArr = new int[LEN];
-        System.out.printf("숫자 %d개를 입력해 주세요\n", LEN); // 하드코딩 지양.
-        for(int i=0; i<numberArr.length; i++)
-        {
-            System.out.printf("숫자 [%d] : ", i+1);
-            numberArr[i] = sc.nextInt();
+        System.out.printf("숫자 %d개를 입력해 주세요.\n", numberArr.length);
+        for(int i=0; i<numberArr.length; i++) {
+            System.out.printf( "숫자%d : ", (i+1) );
+            numberArr[i] = scan.nextInt();
         }
-        // 분리 하는걸 신경 써야함
         int sum = 0;
-        for(int i=0; i<numberArr.length; i++)
-        {
+        for(int i=0; i<numberArr.length; i++) {
             sum += numberArr[i];
         }
-        System.out.printf("합계 : %d\n평균 : %.6f", sum, (float) sum / numberArr.length);
+        System.out.println("합계 : " + sum);
+        System.out.println("평균 : " + (float)sum / numberArr.length);
     }
 }

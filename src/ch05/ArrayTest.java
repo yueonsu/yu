@@ -2,22 +2,18 @@ package ch05;
 
 public class ArrayTest {
     public static void main(String[] args) {
-        int[] scores = { 100, 87, 56, 23, 28, 98, 30, 32, 17, 22 };
-        //점수가 짝수인 친구들만 점수 프린트
-        //점수가 홀수인 친구들의 합계점수도 프린트
-        int sum = 0;
+        int[] scores = {100, 87, 56, 23, 28, 98, 30, 32, 17, 22};
 
-        for(int i=0; i< scores.length; i++)
-        {
-            if((scores[i]%2) == 0)
-            {
-                System.out.println(scores[i]);
-            }
-            else
-            {
-                sum += scores[i];
+        //점수가 짝수인 친구들만 점수 프린트 해주시고
+        //점수가 홀수인 친구들의 합계점수(1) 프린트 해주세요.
+        int oddSum = 0;
+        for(int i=0; i<scores.length; i++) {
+            if(scores[i] % 2 == 0) { //짝수
+                System.out.printf("scores[%d] : %d\n", i, scores[i]);
+            } else {
+                oddSum += scores[i];
             }
         }
-        System.out.println("Sum : " + sum);
+        System.out.println("홀수 합계 : " + oddSum);
     }
 }

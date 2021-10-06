@@ -2,36 +2,18 @@ package ch05;
 
 public class PrimitiveAndRefExample2 {
     public static void main(String[] args) {
-        int val = 10;
-
-        Box box = new Box();
-        box.val = 10;
-
-        Box box2 = box; //--> 주소값 복사 box, box2는 같은 곳을 가리킨다
-        box2.val = 20;
-
-        System.out.println("val : " + val);
-        changeVal(val);
-        System.out.println("val : " + val);
-        System.out.println("------");
-        System.out.println("box.val : " + box.val);
-        changeVal(box);
-        System.out.println("box.val : " + box2.val);
-
+       String s1 = new String("Hello");
+       System.out.println(s1);
+       //changeVal(s1);
+       char[] charArr = s1.toCharArray();
+       charArr[2] = '안';
+       System.out.println(s1);
+       System.out.println(charArr);
     }
 
-    public static void changeVal(int pval)
-    {
-        pval = 30;
-    }
+    public static void changeVal(String str) {
 
-    public static void changeVal(Box pbox)
-    {
-        pbox.val = 30;
+        str = new String("안녕");
     }
 }
 
-class Box
-{
-    int val;
-}

@@ -1,40 +1,35 @@
 package ch05;
 
 public class MethodTest {
-    // Method
-    public static void printMyself(String name, int age, float height, char bloodType)
-    {
-        System.out.printf("%s의 나이는 %d세, 키는 %.2fcm, 혈액형은 %c 형이다.", name, age, height, bloodType);
+    public static void main(String[] args) {
+        //printMyself("황장군", 17, 180.82f, 'A');
+        //황장군의 키는 180.82 cm, 나이는 17세, 혈액형은 A형이다.
+
+        int mon = (int)(Math.random() * 12) + 1;  //1~12
+        System.out.println("mon : " + mon);
+        printSeason(mon);
+        //12, 1, 2 > "겨울"
+        //3, 4, 5 > "봄"
+        //6, 7, 8 > "여름"
+        //9, 10, 11 > "가을"
+        //1~12 사이값이 아닌 값이 들어오면 "알 수 없음"
     }
-    // Method
-    public static void printSeason(int mon)
-    {
-        if(mon < 3 || mon == 12)
-        {
+    public static void printSeason(int mon) {
+        if(mon < 1 || mon > 12) {
+            System.out.println("알 수 없음");
+        } else if(mon == 12 || mon < 3) {
             System.out.println("겨울");
-        }
-        else if(mon < 6)
-        {
+        } else if(mon < 6) {
             System.out.println("봄");
-        }
-        else if(mon < 9)
-        {
+        } else if(mon < 9) {
             System.out.println("여름");
-        }
-        else if(mon < 12)
-        {
+        } else {
             System.out.println("가을");
-        }
-        else
-        {
-            System.out.println("알 수 없음"); // 예외처리
         }
     }
 
-    public static void main(String[] args) {
-//        printMyself("황장군", 17, 180.82f, 'A');
-        int mon = (int)(Math.random() * 12) + 1;
-        System.out.println(mon);
-        printSeason(mon);
+    public static void printMyself(String nm, int age, float height, char bloodType) {
+        System.out.printf("%s의 키는 %.2f cm, 나이는 %d세, 혈액형은 %c형이다."
+                , nm, height, age, bloodType);
     }
 }
